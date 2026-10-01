@@ -1,0 +1,26 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/BuildingBlocks/">
+    <Project Path="src/BuildingBlocks/EShop.SharedKernel/EShop.SharedKernel.csproj" />
+    <Project Path="src/BuildingBlocks/EShop.Caching.Abstractions/EShop.Caching.Abstractions.csproj" />
+    <Project Path="src/BuildingBlocks/EShop.Caching/EShop.Caching.csproj" />
+    <Project Path="src/BuildingBlocks/EShop.ServiceDefaults/EShop.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/Catalog/">
+    <Project Path="src/Services/Catalog/Catalog.Core/Catalog.Core.csproj" />
+    <Project Path="src/Services/Catalog/Catalog.Infrastructure/Catalog.Infrastructure.csproj" />
+    <Project Path="src/Services/Catalog/Catalog.Api/Catalog.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Basket/">
+    <Project Path="src/Services/Basket/Basket.Core/Basket.Core.csproj" />
+    <Project Path="src/Services/Basket/Basket.Infrastructure/Basket.Infrastructure.csproj" />
+    <Project Path="src/Services/Basket/Basket.Api/Basket.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/Gateways/">
+    <Project Path="src/Gateways/EShop.Gateway/EShop.Gateway.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/EShop.UnitTests/EShop.UnitTests.csproj" />
+  </Folder>
+</Solution>
