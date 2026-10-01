@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <RootNamespace>Catalog.Api</RootNamespace>
+    <UserSecretsId>eshop-catalog-api</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Catalog.Infrastructure\Catalog.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\EShop.ServiceDefaults\EShop.ServiceDefaults.csproj" />
+  </ItemGroup>
+</Project>
