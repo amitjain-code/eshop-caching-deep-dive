@@ -53,9 +53,10 @@ internal static class SessionEndpoints
     private static async Task<Ok<int>> RevokeAllAsync(ClaimsPrincipal user, SessionHandlers handlers) =>
         TypedResults.Ok(await handlers.RevokeAllAsync(user.GetRequiredUserId()));
 
-    private static async Task<Ok<PreferencesDto>> GetPreferencesAsync(HttpContext http)
+    // The CancellationToken parameter also keeps this from being mistaken for a RequestDelegate (ASP0016).
+    private static async Task<Ok<PreferencesDto>> GetPreferencesAsync(HttpContext http, CancellationToken ct)
     {
-        await http.Session.LoadAsync(http.RequestAborted);
+        await http.Session.LoadAsync(ct);
         return TypedResults.Ok(new PreferencesDto(
             http.Session.GetString("currency") ?? "INR",
             http.Session.GetString("locale") ?? "en-IN"));
