@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>EShop.Caching</RootNamespace>
+    <Description>Reusable caching framework: HTTP cache headers + ETags, CDN purge, gateway output cache, HybridCache (L1+L2), Redis primitives, cross-node invalidation.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Caching.Hybrid" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" />
+    <PackageReference Include="Microsoft.AspNetCore.OutputCaching.StackExchangeRedis" />
+    <PackageReference Include="StackExchange.Redis" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EShop.Caching.Abstractions\EShop.Caching.Abstractions.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="EShop.UnitTests" />
+  </ItemGroup>
+</Project>
