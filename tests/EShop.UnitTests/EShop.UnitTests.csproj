@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\BuildingBlocks\EShop.Caching\EShop.Caching.csproj" />
+    <ProjectReference Include="..\..\src\Services\Catalog\Catalog.Core\Catalog.Core.csproj" />
+    <ProjectReference Include="..\..\src\Services\Basket\Basket.Core\Basket.Core.csproj" />
+  </ItemGroup>
+</Project>
