@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>EShop.Caching</RootNamespace>
+    <Description>Ports for caching that the Application layer may depend on. No infrastructure dependencies.</Description>
+  </PropertyGroup>
+</Project>

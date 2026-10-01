@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>EShop.SharedKernel</RootNamespace>
+    <Description>Dependency-free primitives shared by every bounded context (Result, Error, Entity, integration contracts).</Description>
+  </PropertyGroup>
+</Project>

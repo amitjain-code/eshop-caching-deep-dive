@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>EShop.ServiceDefaults</RootNamespace>
+    <Description>Cross-cutting host defaults: problem details, health checks, OpenAPI, forwarded headers, demo authentication.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EShop.SharedKernel\EShop.SharedKernel.csproj" />
+  </ItemGroup>
+</Project>
